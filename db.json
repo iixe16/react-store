@@ -1,0 +1,41 @@
+{
+    "product":[
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "description": "A comfortable and stylish T-Shirt",
+      "price": 19.99,
+      "currency": "USD",
+      "image_url": "https://img.freepik.com/premium-psd/front-side-yellow-t-shirt-mockup-isolated_358305-87.jpg",
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Coffee Mug",
+      "description": "The perfect mug for your morning coffee",
+      "price": 9.99,
+      "currency": "USD",
+      "image_url": "https://img.freepik.com/premium-psd/coffee-mug-mockup_1389-369.jpg",
+      "stock": 5
+    },
+    {
+      "id": 3,
+      "name": "Notebook",
+      "description": "A beautiful notebook to capture your ideas",
+      "price": 14.99,
+      "currency": "USD",
+      "image_url": "https://img.freepik.com/free-psd/ringed-notebook-mockup-template_1051-2872.jpg",
+      "stock": 15
+    },
+  {
+        "id": 4,
+        "name": "Wireless Headphones",
+        "description": "Listen to your music wirelessly",
+        "price": 49.99,
+        "currency": "USD",
+        "image_url": "https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg",
+        "stock": 3
+    }
+]
+
+}

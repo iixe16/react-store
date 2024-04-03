@@ -3,11 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import Pro from './component/Pro';
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import AddProduct from './component/AddProduct';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/pro/:id",
+    element:<Pro/>,
+  },
+  {
+    path: "/AddProduct",
+    element:<AddProduct/>,
+  },
+
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router}/>
+    
   </React.StrictMode>
 );
 
