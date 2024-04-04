@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export default function Products() {
+export default function ViewProducts() {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
@@ -21,9 +21,9 @@ export default function Products() {
 
         getProducts();
 
-        
+        // Cleanup function to handle component unmount
         return () => {
-            
+            // componentMounted logic replaced with cleanup function
         };
     }, []);
 
@@ -36,17 +36,9 @@ export default function Products() {
     };
 
     const ShowProducts = () => {
-        const navigate = useNavigate();
         return (
             <>
-                <div className="buttons d-flex justify-content-center mb-5 pb-5">
-                <button 
-                  className="btn btn-primary" 
-                  onClick={() => navigate('/add-product')}
-                >
-                  Add Product
-                </button>
-                </div>
+               
                 <div className="row">
                     {filter.map((product) => {
                         return (
@@ -55,7 +47,7 @@ export default function Products() {
                                     <img src={product.image_url} className="card-img-top" alt={product.name} height="250px" style={{objectFit: "contain"}} />
                                     <div className="card-body">
                                         <h5 className="card-title mb-3">{product.name}</h5>
-                                        <p className="card-text">${product.price}</p>
+                                        <Link to={`/pro/${product.id}`} className="btn btn-outline-dark me-2">view details</Link>
                                     </div>
                                 </div>
                             </div>

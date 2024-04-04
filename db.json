@@ -1,7 +1,7 @@
 {
-    "product":[
+  "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "T-Shirt",
       "description": "A comfortable and stylish T-Shirt",
       "price": 19.99,
@@ -10,16 +10,16 @@
       "stock": 10
     },
     {
-      "id": 2,
-      "name": "Coffee Mug",
+      "name": "Coffee Mugsdsdsd",
       "description": "The perfect mug for your morning coffee",
-      "price": 9.99,
+      "price": 90,
       "currency": "USD",
       "image_url": "https://img.freepik.com/premium-psd/coffee-mug-mockup_1389-369.jpg",
-      "stock": 5
+      "stock": 5,
+      "id": "2"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Notebook",
       "description": "A beautiful notebook to capture your ideas",
       "price": 14.99,
@@ -27,15 +27,41 @@
       "image_url": "https://img.freepik.com/free-psd/ringed-notebook-mockup-template_1051-2872.jpg",
       "stock": 15
     },
-  {
-        "id": 4,
-        "name": "Wireless Headphones",
-        "description": "Listen to your music wirelessly",
-        "price": 49.99,
-        "currency": "USD",
-        "image_url": "https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg",
-        "stock": 3
+    {
+      "id": "4",
+      "name": "Wireless Headphones",
+      "description": "Listen to your music wirelessly",
+      "price": 49.99,
+      "currency": "USD",
+      "image_url": "https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg",
+      "stock": 3
+    },
+    {
+      "id": "5",
+      "name": "Women's sports shoes",
+      "description": "Comfortable and beautiful women's sports shoes",
+      "price": 36,
+      "currency": "USD",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUNcuEqmH86kzHbOAyWvvqZgnN9Dr4_kA4A&s",
+      "stock": 56
+    },
+    {
+      "id": "6",
+      "name": "CAP",
+      "description": "Very beautiful black CAP",
+      "price": 10,
+      "currency": "USD",
+      "image_url": "data:image/jpeg;base64,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",
+      "stock": null
+    },
+    {
+      "id": "7",
+      "name": "dress",
+      "description": "Beautiful dress for children",
+      "price": 50,
+      "currency": "UDE",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAobUKLXtH0Uj6rnSwYC4r-hGeOlfbFnovYQ&s",
+      "stock": 1
     }
-]
-
+  ]
 }

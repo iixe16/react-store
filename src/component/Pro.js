@@ -8,7 +8,7 @@ export default function Pro() {
    useEffect(() =>{
    const getProduct =async () =>{
     setLoading (true);
-    const response = await fetch(`http://localhost:5000/product/${id}`);
+    const response = await fetch(`http://localhost:5001/product/${id}`);
     setProduct(await response.json());
     setLoading(false);
    }
