@@ -57,7 +57,7 @@ import { useNavigate, useParams } from 'react-router-dom';
       body: JSON.stringify(productData),
     };
 
-    const url = productId ? `http://localhost:5001/products/${productId}` : 'http://localhost:5000/products';
+    const url = productId ? `http://localhost:5000/products/${productId}` : 'http://localhost:5000/products';
 
     fetch(url, fetchOptions)
       .then(response => response.json())

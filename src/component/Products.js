@@ -10,7 +10,7 @@ export default function Products() {
     useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
-            fetch("http://localhost:5001/products")
+            fetch("http://localhost:5000/products")
                 .then((response) => response.json())
                 .then((products) => {
                     setData(products);
